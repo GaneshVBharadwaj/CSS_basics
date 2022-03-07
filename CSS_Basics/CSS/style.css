@@ -1,0 +1,179 @@
+body{
+    font-size: 15px;
+    font-family: roboto;
+    line-height: 1.5em;
+    padding:0;
+    margin:0;
+    background-color: yellowgreen;
+}
+
+.container{
+    width:100%;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul{
+    padding:0;
+    margin:0;
+}
+
+header{
+    background: yellow ;
+    color:maroon;
+    padding-top: 30px;
+    min-height:70px;
+    border-bottom: darkgreen 3px solid;
+}
+
+header a{
+    color: maroon;
+    text-decoration:underline;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+header li{
+    display :inline-block;
+    padding: 0 30px 0 30px;
+}
+
+header #branding{
+    float:left;
+}
+
+header nav{
+    float:right;
+    margin-top: -35px;
+}
+
+#showcase{
+    min-height: 500px;
+    background: url('../Images/truck.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    text-align: center;
+    color:rgb(244, 246, 248);
+}
+
+#showcase{
+    margin-top:40px;
+    font-size:25px;
+    margin-bottom:10px;
+}
+
+#showcase p{
+    font-size:30px;
+    text-align:left;
+    padding:25px;
+    font-style:oblique;
+    line-height: 25px;
+}
+
+#box{
+    margin-top:20px;
+}
+
+#box .box{
+    float: left;
+    text-align: center;
+    width:22%;
+    padding:14px;
+    box-shadow: 10px 5px 5px rgb(34, 34, 9);
+}
+
+#box.box image{
+    width:90px;
+}
+
+footer{
+    padding :0%;
+    margin: 0px;
+    background-color: darkgreen;
+    text-align:center;
+    color:white;
+    font-size:small;
+    font-style:initial;
+    position:fixed;
+    left:0;
+    width:100%;
+    bottom: 0;
+}
+
+aside#sidebar{
+    float:right;
+    width:30%;
+    margin-top:10px;
+}
+
+article#main-col{
+    float:left;
+    width:65%;
+    font-size: medium;
+    margin:10px;
+}
+
+.dark{
+    padding:15px;
+    background:rgb(0, 32, 0);
+    color:white;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+ul#services li{
+    list-style: none;
+    padding:10px;
+    border:white solid 1px;
+    margin-bottom:5px;
+    background:rgb(218, 241, 176);
+}
+
+aside#sidebar .will input{
+    width: 90%;
+    padding: 10px;
+    margin-bottom:5px;
+}
+
+aside#sidebar .details textarea{
+    width:360px;
+    height:44px;
+}
+
+.button_1{
+    height:30px;
+    background: rgb(218, 241, 176); 
+    border:0;
+    padding-left:20px;
+    padding-right:20px;
+    color:black;
+    align-content: center;
+}
+
+@media( max-width:768px){
+    header #branding,
+    header nav,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+    
+    aside#sidebar{
+        margin-bottom:120px;
+    }
+
+    header nav{
+        margin-top:20px;
+    }
+
+    #showcase h1{
+        font-size:25px;
+    }
+
+    #boxes .box:nth child{
+     margin-bottom:60px;
+    }
+}
